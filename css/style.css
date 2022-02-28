@@ -10,7 +10,7 @@ body{
 }
 
 .padlr{
-    padding: 0px 75px 0px 75px;
+    padding: 0px 60px 0px 75px;
 }
 
 .header{
@@ -39,10 +39,16 @@ body{
     line-height: 22px;
     color: black;
     transition: color 0.5s ease;
+    padding-bottom: 2px;
+}
+
+.item-link:hover{
+    border-bottom: 1px #FF9900 solid;
 }
 
 .item-link:focus{
     color: #FF9900;
+    border-bottom: 1px #FF9900 solid;
 }
 
 .menu-item__link{
@@ -102,7 +108,7 @@ body{
 }
 
 .content-info__button:hover{
-    background: #d17e00;
+    background: rgba(255, 153, 0, 0.7);;
 }
 
 .itemDots{
