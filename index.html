@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <title>Document</title>
 </head>
 <body>
@@ -26,15 +27,20 @@
             <div class="main-content">
                 <div class="main-content__slider">
                     <ul class="content-sliderSpicok">
-                        <li class="sliderSpicok-item"><a href="#" class="header-test_link__photo"><img src="img/fon.png" alt="#" class="sliderPhoto"></a><p class="sliderText"></p></li>
-                        <!-- <li class="sliderSpicok-item"><a href="#" class="header-test_link__photo"><img src="img/fon.png" alt="#" class="sliderPhoto"></a><p class="sliderText"></p></li>
-                        <li class="sliderSpicok-item"><a href="#" class="header-test_link__photo"><img src="img/fon.png" alt="#" class="sliderPhoto"></a><p class="sliderText"></p></li> -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><img src="img/fon.png" alt="#" class="sliderPhoto"></div>
+                              <div class="swiper-slide"><img src="img/pic_1.png" alt="#"></div>
+                              <div class="swiper-slide"><img src="img/pic_2.png" alt="#"></div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="main-content__info">
+                                <h1 class="content-info__title">Проектные решения любой сложности</h1>
+                                <p class="content-info__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
+                                <button class="content-info__button">Заказать расчёт</button>
+                            </div>
+                        </div>   
                     </ul>
-                    <div class="main-content__info">
-                        <h1 class="content-info__title">Проектные решения любой сложности</h1>
-                        <p class="content-info__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
-                        <button class="content-info__button">Заказать расчёт</button>
-                    </div>
                     <div class="sliderDots">
                         <span class="itemDots"></span>
                         <span class="itemDots dots"></span>
@@ -46,9 +52,44 @@
                         <h2 class="about-infoText__title">О нас</h2>
                         <p class="about-infoText__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
                     </div>
+                    <div class="content-about__infoImg">
+                        <div class="about-infoImg">
+                            <img src="img/InfoFon.jpg" alt="#" class="about-infoImg__fon">
+                            <div class="about-infoImg__content">
+                                <p class="infoImg-content__text">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
+                                <button class="infoImg-content__btn">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="about-cards">
+                            <div class="about-card card-bottom">
+                                <img src="img/Frame 16.svg" alt="#">
+                                <div class="about-card__info">
+                                    <h1 class="card-title">Консультация с широким активом</h1>
+                                    <p class="card-text">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+                                </div>
+                            </div>
+                            <div class="about-card">
+                                <img src="img/Frame 12.svg" alt="#">
+                                <div class="about-card__info">
+                                    <h1 class="card-title">Консультация с широким активом</h1>
+                                    <p class="card-text">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+    </script>
 </body>
 </html>
