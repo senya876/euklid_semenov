@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
                     <li class="menu-item__link"><a href="#" class="item-link">Этапы</a></li>
                     <li class="menu-item__link"><a href="#" class="item-link">Отзывы</a></li>
                     <li class="menu-item__link"><a href="#" class="item-link">Контакты</a></li>
-                    <li class="menu-item__link"><a href="#" class="item-link"><img src="img/search (1).png" alt="#" class="item-link__search"></a></li>
+                    <li class="menu-item__link"><a href="#" class="item-link__look"><img src="img/search (1).svg" alt="#" class="item-link__search"></a></li>
                 </ul>
             </div>
         </header>
@@ -81,7 +81,7 @@
                 <div class="content-work">
                     <h1 class="work-title">Как мы работаем</h1>
                     <ul class="work-list">
-                        <li class="work-list__item"><a href="#" class="work-item__link">1 шаг</a></li>
+                        <li class="work-list__item"><a href="#" class="work-item__link work-item__link-default">1 шаг</a></li>
                         <li class="work-list__item"><a href="#" class="work-item__link">2 шаг</a></li>
                         <li class="work-list__item"><a href="#" class="work-item__link">3 шаг</a></li>
                         <li class="work-list__item"><a href="#" class="work-item__link">4 шаг</a></li>
@@ -98,8 +98,84 @@
                         </div>
                     </div>
                 </div>
+                <div class="content-question">
+                    <h1 class="content-question__title">Часто задаваемые вопросы</h1>
+                    <section class="content-question__section">
+                        <div class="question-section">
+                            <h3>Из чего формируется конечная стоимость проекта?</h3>
+                            <button class="section-plus">
+                                <img src="img/Rectangle 12 (Stroke).svg" alt="#" class="section-plus__rotate">
+                            </button>
+                        </div>
+                        
+                    </section>
+                    <section class="content-question__section">
+                        <div class="question-section">
+                            <h3>У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
+                            <button class="section-plus">
+                                <img src="img/Rectangle 12 (Stroke).svg" alt="#" class="section-plus__rotate">
+                            </button>
+                        </div>
+                        
+                    </section>
+                    <section class="content-question__section">
+                        <div class="question-section">
+                            <h3>Я выбираю между разными компаниями. В чём ваше отличие?</h3>
+                            <button class="section-plus">
+                                <img src="img/Rectangle 12 (Stroke).svg" alt="#" class="section-plus__rotate">
+                            </button>
+                        </div>
+                        
+                    </section>
+                    <section class="content-question__section">
+                        <div class="question-section">
+                            <h3>Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </h3>
+                            <button class="section-plus">
+                                <img src="img/Rectangle 12 (Stroke).svg" alt="#" class="section-plus__rotate">
+                            </button>
+                        </div>
+                        
+                    </section>
+                    <section class="content-question__section sec-bot">
+                        <div class="question-section">
+                            <h3>Могу ли я вернуть деньги на каком-либо из этапов работ? </h3>
+                            <button class="section-plus">
+                                <img src="img/Rectangle 12 (Stroke).svg" alt="#" class="section-plus__rotate">
+                            </button>
+                        </div>
+                        
+                    </section>
+                </div>
             </div>
         </main>
+        <footer class="footer">
+            <div class="footer-menu">
+                <img src="img/Logo (10).png" alt="#" class="footer-logo">
+                <ul class="footer-menu__list">
+                    <li class="footer-list__item"><a href="#" class="footer-item__link">О нас</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-item__link">Проекты</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-item__link">Отзывы</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-item__link">Договор оферты</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-item__link">Договор подряда</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-item__link">Конфиденциальность</a></li>
+                    <li class="footer-list__item"><a href="#" class="footer-item__link">Партнёрское соглашение</a></li>
+                </ul>
+                <ul class="footer-menu__list_social">
+                    <li class="footer-list__social_item"><a href="#" class="footer-item__social_link"><img src="img/social media.svg" alt="#" class="social-link"></a></li>
+                    <li class="footer-list__social_item"><a href="#" class="footer-item__social_link"><img src="img/vk.svg" alt="#" class="social-link"></a></li>
+                    <li class="footer-list__social_item"><a href="#" class="footer-item__social_link"><img src="img/instagram.svg" alt="#" class="social-link"></a></li>
+                </ul>
+            </div>
+            <div class="footer-form">
+                <h1 class="footer-form__title">Оставить заявку</h1>
+                <input type="text" placeholder="Фамилия, имя и отчество*" class="footer-form__input">
+                <input type="text" placeholder="E-mail*" class="footer-form__input">
+                <textarea class="footer-form__textarea" placeholder="Сообщение"></textarea>
+                <button class="footer-form__btn">Отправить данные</button>
+                <label class="footer-form__label"><input type="checkbox" class="footer-label__checkbox">Согласен на обработку данных</label>
+            </div>
+            <p class="footer-text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. </p>
+        </footer>
     </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
