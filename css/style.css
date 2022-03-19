@@ -544,6 +544,7 @@ body{
     height: 150px;
     margin-bottom: 32px;
     color: white;
+    border: none;
 }
 
 .footer-form__textarea::placeholder{
